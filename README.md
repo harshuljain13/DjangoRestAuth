@@ -1,6 +1,17 @@
 # DjangoRestAuth
 This Repository consists of implementation of various authentication techniques used in djangoRestFramework.
 
+```
+git clone https://github.com/harshul1610/DjangoRestAuth.git
+virtualenv -p python venv
+source venv/bin/activate
+pip install -r requirements.txt
+python manage.py shell
+>>> from django.contrib.auth.models import User
+>>> u = User.objects.create_user('harshul','harshul1234@gmail.com','harshulpass')
+>>> u.save()
+```
+
 ## Basic Authentication in Homeapp
 
 ### Get Data providing Username and Password
