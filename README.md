@@ -6,6 +6,7 @@ git clone https://github.com/harshul1610/DjangoRestAuth.git
 virtualenv -p python venv
 source venv/bin/activate
 pip install -r requirements.txt
+python manage.py migrate
 python manage.py shell
 >>> from django.contrib.auth.models import User
 >>> u = User.objects.create_user('harshul','harshul1234@gmail.com','harshulpass')
